@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+button {
+  cursor: pointer;
+  padding: 2rem 6rem;
+  background-color: rgba(167, 24, 24, 0.322);
+  border-radius: 5%;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+}
+button:hover {
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  background-color: rgb(167, 24, 24);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navigaatio */
+.main-head {
+  background: #131c27;
+  color: white;
+  top:0px;
+  z-index:3;
+}
+
+nav {
+  min-height: 7vh;
+  display: flex;
+  width: 90%;
+  padding: 1rem;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  flex: 1 1 40rem;
+}
+
+nav ul li a:hover {
+  transition: ease-in-out 0.3s;
+  color: rgb(167, 24, 24);
+}
+#logo {
+  flex: 1 1 40rem;
+}
+
+#logo:hover {
+  transition: ease-in-out 0.4s;
+  cursor: pointer;
+  color: rgb(167, 24, 24);
+}
+
+.nemesis {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("https://cdn.mos.cms.futurecdn.net/6DgunA8jtgFqcFpFV6wMwN.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nemesis h3 {
+  padding: 5rem;
+}
+
+.toka {
+  display: flex;
+  flex-wrap: wrap;
+}
+.toka img {
+  order: 2;
+  width: 100%;
+}
+
+.toka .kuva {
+  order:1;
+  flex: 1 1 55rem;
+  background-color: rgb(30, 44, 9);
+}
+.toka .teksti {
+  background: #1d1f1b;
+  background: -webkit-linear-gradient(right, #1d1f1b, #a7182f);
+  background: -moz-linear-gradient(right, #1d1f1b, #a7182f);
+  background: linear-gradient(to left, #1d1f1b, #a7182f);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 40rem;
+  color: white;
+}
+.teksti h2 {
+  padding: 1rem;
+}
+.toka p {
+  padding: 0.8rem;
+  margin-left: 2.5rem;
+}
+.toka button {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 5%;
+  cursor: pointer;
+  border: none;
+  color: red;
+  background-color: rgba(2, 1, 1, 0.678);
+}
+
+.container {
+  text-align: center;
+  margin: 2rem;
+}
+
+.otsikko{
+  font-size: 5rem;
+  padding: 2rem;
+  text-align: center;
+  color:rgba(255, 255, 255, 0.418);
+  text-shadow: 2px 11px 7px rgba(167,24,47,0.68);
+}
+.taustavari{
+  background:black;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/91bb9c2c-5710-4f85-9daf-cc9e0923c85d/d2qek2y-4c3f2a69-9014-43fe-bb6c-ea4e6c7b4aff.jpg/v1/fill/w_1280,h_800,q_75,strp/zombie_background_by_ace_bgi_d2qek2y-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD04MDAiLCJwYXRoIjoiXC9mXC85MWJiOWMyYy01NzEwLTRmODUtOWRhZi1jYzllMDkyM2M4NWRcL2QycWVrMnktNGMzZjJhNjktOTAxNC00M2ZlLWJiNmMtZWE0ZTZjN2I0YWZmLmpwZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.q3Wv071_RBCva7y6mlV2qwRJDV-nKM4t8tGq0jz478A");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.boxes{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box{
+  background-color: white;
+  flex: 1 1 30rem;
+  min-height: 30vh;
+  margin:3rem 5rem;
+  box-shadow: 0 10px 10px rgb(167, 24, 47, 0.1), 0 20px 20px rgba(167, 24, 47, 0.1);
+  text-align: center;
+  border-radius: 10px;
+}
+.box3, .box2, .box1{
+  color:white;
+  background-color: #484848;
+}
+
+.box h3{
+  padding:1rem;
+  background-color: #a7182f;
+  color:white;
+}
+.box p{
+  padding: 2rem; 
+}
+.vari{
+  background-color: blanchedalmond;
+}
+
+
+/* Yhteydenotto formi */
+
+#contact{
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper{
+  background: rgba(167, 24, 48, 0.726);
+  width:50%;
+  color: white;
+  border-radius: 20px;
+}
+.form-title{
+  text-align: center;
+  padding:2rem
+}
+
+.name-form, .email-form, .text-form{
+  padding:3rem;
+  text-align: center;
+}
+.form-wrapper label{
+  margin: 0rem 3rem;
+}
+
+
+.form-wrapper button{
+  cursor: pointer;
+  color: red;
+  background-color: rgba(2, 1, 1, 0.678);
+  width:100%;
+  font-size: 3rem;
+  padding:2rem;
+  margin-top:3rem;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input{
+  padding:1rem 1rem;
+  
+}
+.text-form label{
+  margin: 0 2rem 0 0;
+}
+
+.footer-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131c27;
+  min-height: 10vh;
+  padding: 2rem;
+  color:white;
+  }
+  
+
+/* MEDIA QUERIT */
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 40%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .nemesis h3 {
+    color: rgba(202, 4, 4, 0.836);
+  }
+  .form-wrapper{
+    width: 90%;
+  }
+}
